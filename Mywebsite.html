@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navdeep | My Personal Website</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    padding: 22px;
+    text-align: center;
+    background: #111c33;
+    border-bottom: 1px solid #263653;
+}
+
+header h2 {
+    color: #38bdf8;
+    letter-spacing: 2px;
+}
+
+.hero {
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 9vw, 58px);
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: #cbd5e1;
+    font-size: 18px;
+    max-width: 500px;
+}
+
+button {
+    margin-top: 28px;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 30px;
+    background: #38bdf8;
+    color: #07111f;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+section {
+    padding: 45px 20px;
+    text-align: center;
+}
+
+section h2 {
+    color: #38bdf8;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    max-width: 850px;
+    margin: auto;
+}
+
+.card {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 16px;
+    border: 1px solid #334155;
+}
+
+.card h3 {
+    color: #7dd3fc;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #cbd5e1;
+}
+
+#message {
+    color: #7dd3fc;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #94a3b8;
+    background: #111c33;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>NAVDEEP'S WEBSITE</h2>
+</header>
+
+<div class="hero">
+    <h1>Hello, I'm Navdeep!</h1>
+
+    <p>
+        Welcome to my personal website.
+        I am learning web development and
+        creating something new every day.
+    </p>
+
+    <button onclick="showMessage()">
+        Say Hello 👋
+    </button>
+
+    <div id="message"></div>
+</div>
+
+<section>
+    <h2>About Me</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>My Journey 🚀</h3>
+            <p>
+                I am exploring the world of
+                technology and website creation.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>My Skills 💻</h3>
+            <p>
+                HTML, CSS and JavaScript.
+                Learning step by step!
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>My Goal 🎯</h3>
+            <p>
+                To become better at creating
+                useful and creative websites.
+            </p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>Made with ❤️ by Navdeep</p>
+    <p>My First Published Website</p>
+</footer>
+
+<script>
+function showMessage() {
+    document.getElementById("message").innerText =
+        "Thank you for visiting my website! 😊";
+}
+</script>
+
+</body>
+</html>
